@@ -1,6 +1,6 @@
 {{-- resources/views/partials/navbar.blade.php --}}
 <style>
-    /* Navbar Modern Glassmorphism */
+    /* Navbar Modern Glassmorphism - Updated Colors */
     .navbar-mahira {
         background: rgba(255, 255, 255, 0.95);
         backdrop-filter: blur(20px);
@@ -32,28 +32,16 @@
         transform: scale(1.05);
     }
     
-    .navbar-mahira .brand-logo {
-        width: 45px;
-        height: 45px;
-        background: linear-gradient(135deg, #001D5F 0%, #003380 100%);
-        border-radius: 12px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: white;
-        font-size: 1.3rem;
-        box-shadow: 0 4px 15px rgba(0, 29, 95, 0.3);
-        animation: glow 3s ease-in-out infinite;
-    }
-    
-    @keyframes glow {
-        0%, 100% {
-            box-shadow: 0 4px 15px rgba(0, 29, 95, 0.3);
-        }
-        50% {
-            box-shadow: 0 4px 25px rgba(0, 29, 95, 0.5);
-        }
-    }
+.navbar-mahira .brand-logo {
+    height: 50px;
+    width: auto;
+    transition: all 0.3s ease;
+    filter: drop-shadow(0 4px 15px rgba(0, 29, 95, 0.2));
+}
+
+.navbar-mahira .brand-logo:hover {
+    filter: drop-shadow(0 6px 20px rgba(0, 29, 95, 0.35));
+}
     
     .navbar-mahira .nav-link {
         color: #001D5F;
@@ -94,7 +82,7 @@
     }
     
     .navbar-mahira .btn-register {
-        background: linear-gradient(135deg, #001D5F 0%, #003380 100%);
+        background: linear-gradient(135deg, #001D5F 0%, #001440 100%);
         color: white;
         padding: 0.65rem 1.75rem;
         border-radius: 50px;
@@ -109,9 +97,9 @@
     }
     
     .navbar-mahira .btn-register:hover {
-        background: linear-gradient(135deg, #002875 0%, #0044aa 100%);
+        background: linear-gradient(135deg, #D4AF37 0%, #B8941F 100%);
         transform: translateY(-2px);
-        box-shadow: 0 10px 30px rgba(0, 29, 95, 0.35);
+        box-shadow: 0 10px 30px rgba(212, 175, 55, 0.35);
     }
     
     .navbar-mahira .promo-badge {
@@ -152,6 +140,43 @@
         background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23001D5F' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
     }
     
+    /* Dropdown Styling */
+    .navbar-mahira .dropdown-menu-layanan {
+        border: none;
+        border-radius: 12px;
+        box-shadow: 0 10px 40px rgba(0, 29, 95, 0.15);
+        padding: 12px 0;
+        margin-top: 8px;
+        min-width: 220px;
+    }
+    
+    .navbar-mahira .dropdown-item {
+        padding: 12px 24px;
+        font-size: 0.9rem;
+        color: #001D5F;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .navbar-mahira .dropdown-item i {
+        color: #001D5F;
+        font-size: 1.1rem;
+    }
+    
+    .navbar-mahira .dropdown-item:hover {
+        background: rgba(0, 29, 95, 0.08);
+        color: #001D5F;
+        padding-left: 28px;
+    }
+    
+    .navbar-mahira .dropdown-divider {
+        margin: 8px 16px;
+        border-color: rgba(0, 29, 95, 0.1);
+    }
+    
     @media (max-width: 991px) {
         .navbar-mahira .navbar-collapse {
             background: white;
@@ -176,12 +201,9 @@
 
 <nav class="navbar navbar-mahira navbar-expand-lg fixed-top">
     <div class="container">
-        <a class="navbar-brand" href="{{ route('home') }}">
-            <div class="brand-logo">
-                <i class="bi bi-moon-stars-fill"></i>
-            </div>
-            <span>Mahira Tour</span>
-        </a>
+<a class="navbar-brand" href="{{ route('home') }}">
+    <img src="{{ asset('images/mahira-logo.png') }}" alt="Mahira Tour" class="brand-logo">
+</a>
         
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
@@ -194,11 +216,28 @@
                         <i class="bi bi-house-door-fill"></i> Beranda
                     </a>
                 </li>
-                <li class="nav-item position-relative">
-                    <a class="nav-link {{ request()->routeIs('packages') ? 'active' : '' }}" href="{{ route('packages') }}">
-                        <i class="bi bi-box-seam-fill"></i> Paket
+                <li class="nav-item dropdown position-relative">
+                    <a class="nav-link dropdown-toggle {{ request()->routeIs('packages') ? 'active' : '' }}" 
+                       href="#" 
+                       id="layananDropdown" 
+                       role="button" 
+                       data-bs-toggle="dropdown" 
+                       aria-expanded="false">
+                        <i class="bi bi-grid-3x3-gap-fill"></i> Layanan Kami
                         <span class="promo-badge">PROMO</span>
                     </a>
+                    <ul class="dropdown-menu dropdown-menu-layanan" aria-labelledby="layananDropdown">
+                        <li><a class="dropdown-item" href="{{ route('packages') }}?type=umrah">
+                            <i></i> Paket Umrah
+                        </a></li>
+                        <li><a class="dropdown-item" href="{{ route('packages') }}?type=haji">
+                            <i></i> Paket Haji
+                        </a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="{{ route('packages') }}">
+                            <i></i> Lihat Semua Paket
+                        </a></li>
+                    </ul>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link {{ request()->routeIs('schedule') ? 'active' : '' }}" href="{{ route('schedule') }}">

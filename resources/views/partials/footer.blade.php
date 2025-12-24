@@ -1,6 +1,6 @@
 {{-- resources/views/partials/footer.blade.php --}}
 <style>
-    /* Footer Premium Design */
+    /* Footer Premium Design - Updated Colors */
     .footer-mahira {
         background: linear-gradient(180deg, #001D5F 0%, #001440 100%);
         color: white;
@@ -62,9 +62,9 @@
     
     .footer-mahira .footer-badge {
         display: inline-block;
-        background: rgba(16, 185, 129, 0.15);
-        border: 2px solid rgba(16, 185, 129, 0.3);
-        color: #10B981;
+        background: rgba(212, 175, 55, 0.15);
+        border: 2px solid rgba(212, 175, 55, 0.3);
+        color: #D4AF37;
         padding: 8px 16px;
         border-radius: 50px;
         font-size: 0.8rem;
@@ -94,10 +94,11 @@
     }
     
     .footer-mahira .social-link:hover {
-        background: white;
-        color: #001D5F;
+        background: #D4AF37;
+        color: white;
         transform: translateY(-3px);
-        box-shadow: 0 8px 20px rgba(255, 255, 255, 0.2);
+        box-shadow: 0 8px 20px rgba(212, 175, 55, 0.3);
+        border-color: #D4AF37;
     }
     
     .footer-mahira .footer-title {
@@ -114,7 +115,7 @@
         content: '';
         width: 4px;
         height: 20px;
-        background: linear-gradient(180deg, #10B981 0%, #059669 100%);
+        background: linear-gradient(180deg, #D4AF37 0%, #B8941F 100%);
         border-radius: 4px;
     }
     
@@ -168,12 +169,12 @@
     .footer-mahira .contact-icon {
         width: 36px;
         height: 36px;
-        background: rgba(16, 185, 129, 0.15);
+        background: rgba(212, 175, 55, 0.15);
         border-radius: 8px;
         display: flex;
         align-items: center;
         justify-content: center;
-        color: #10B981;
+        color: #D4AF37;
         flex-shrink: 0;
     }
     
@@ -234,13 +235,13 @@
     
     .footer-newsletter input:focus {
         outline: none;
-        border-color: #10B981;
+        border-color: #D4AF37;
         background: rgba(255, 255, 255, 0.15);
     }
     
     .footer-newsletter button {
         padding: 0.85rem 1.75rem;
-        background: linear-gradient(135deg, #10B981 0%, #059669 100%);
+        background: linear-gradient(135deg, #D4AF37 0%, #B8941F 100%);
         color: white;
         border: none;
         border-radius: 50px;
@@ -252,9 +253,9 @@
     }
     
     .footer-newsletter button:hover {
-        background: linear-gradient(135deg, #059669 0%, #047857 100%);
+        background: linear-gradient(135deg, #B8941F 0%, #9A7A1A 100%);
         transform: translateY(-2px);
-        box-shadow: 0 8px 20px rgba(16, 185, 129, 0.3);
+        box-shadow: 0 8px 20px rgba(212, 175, 55, 0.3);
     }
     
     /* Footer Bottom */
@@ -281,14 +282,14 @@
         display: flex;
         align-items: center;
         gap: 8px;
-        background: rgba(16, 185, 129, 0.15);
+        background: rgba(212, 175, 55, 0.15);
         padding: 8px 16px;
         border-radius: 50px;
-        border: 2px solid rgba(16, 185, 129, 0.3);
+        border: 2px solid rgba(212, 175, 55, 0.3);
     }
     
     .footer-license i {
-        color: #10B981;
+        color: #D4AF37;
     }
     
     .footer-license span {
@@ -412,16 +413,15 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="footer-brand">
                         <div class="footer-logo">
-                            <div class="footer-logo-icon">
-                                <i class="bi bi-moon-stars-fill"></i>
-                            </div>
+                          <img src="{{ asset('images/mahira-logo.png') }}" alt="Mahira Tour" style="height: 50px; width: auto;">
                             <span>Mahira Tour</span>
                         </div>
+
                         <div class="footer-badge">
                             <i class="bi bi-shield-check"></i> Berizin Resmi Kemenag RI
                         </div>
                         <p class="footer-description">
-                            Travel Haji & Umrah terpercaya dengan pengalaman lebih dari 9 tahun 
+                            Travel Haji & Umrah terpercaya dengan pengalaman lebih dari 20 tahun 
                             melayani ribuan jamaah ke Tanah Suci. Komitmen kami adalah memberikan 
                             pelayanan terbaik untuk perjalanan ibadah Anda.
                         </p>
@@ -552,7 +552,7 @@
 
 <!-- Floating WhatsApp Button -->
 <div class="floating-whatsapp">
-    <a href="https://wa.me/628123456789?text=Assalamualaikum, saya ingin konsultasi tentang paket umrah" target="_blank" class="whatsapp-button">
+    <a href="https://wa.me/+6282184515310?text=Assalamualaikum, saya ingin konsultasi tentang paket umrah" target="_blank" class="whatsapp-button">
         <i class="bi bi-whatsapp"></i>
     </a>
     <div class="whatsapp-tooltip">

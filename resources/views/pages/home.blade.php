@@ -8,658 +8,473 @@
 @endpush
 
 @section('content')
-<!-- Enhanced Hero Section with Islamic Design -->
-<section class="hero-section">
-    <!-- Islamic Decorative Borders -->
-    <div class="hero-border-top"></div>
-    <div class="hero-border-bottom"></div>
-    
-    <!-- Hero Slider Background -->
-<!-- Hero Slider Background -->
-    <div class="hero-slider">
-        <!-- Slide 1: Umrah Package -->
-        <div class="hero-slide active" data-slide="1">
-            <img src="{{ asset('images/hero/kaaba.jpg') }}" alt="Kaaba Makkah">
-            <div class="hero-overlay"></div>
-            <div class="container">
-                <div class="hero-content">
-                    <div class="hero-badge">
-                        <i class="bi bi-award-fill"></i>
-                        <span>Berizin Resmi Kementerian Agama RI</span>
-                    </div>
-                    <h1 class="hero-title">
-                        Wujudkan Impian <span class="hero-title-highlight">Umrah</span> Anda
-                    </h1>
-                    <div class="hero-divider"></div>
-                    <p class="hero-subtitle">
-                        Berangkat ke Tanah Suci dengan tenang dan khusyuk bersama pembimbing berpengalaman. Mulai dari Rp 22 juta dengan fasilitas lengkap.
-                    </p>
-                    <div class="hero-cta">
-                        <a href="{{ route('schedule') }}" class="btn-hero btn-hero-primary">
-                            <i class="bi bi-calendar-check"></i>
-                            Lihat Jadwal & Harga
-                        </a>
-                        <a href="https://wa.me/628123456789" class="btn-hero btn-hero-outline">
-                            <i class="bi bi-whatsapp"></i>
-                            Konsultasi Gratis
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <!-- Slide 2: Haji Furoda -->
-        <div class="hero-slide" data-slide="2">
-            <img src="{{ asset('images/hero/office.jpg') }}" alt="Arafah">
-            <div class="hero-overlay"></div>
-            <div class="container">
-                <div class="hero-content">
-                    <div class="hero-badge">
-                        <i class="bi bi-star-fill"></i>
-                        <span>Program Haji Khusus Terbaik</span>
-                    </div>
-                    <h1 class="hero-title">
-                        Program <span class="hero-title-highlight">Haji Furoda</span> 2025
-                    </h1>
-                    <div class="hero-divider"></div>
-                    <p class="hero-subtitle">
-                        Tunaikan rukun Islam kelima dengan nyaman. Hotel bintang 5, tenda ber-AC di Arafah, dan handling penuh 25 hari.
-                    </p>
-                    <div class="hero-cta">
-                        <a href="{{ route('package.detail', 6) }}" class="btn-hero btn-hero-primary">
-                            <i class="bi bi-info-circle"></i>
-                            Detail Paket Haji
-                        </a>
-                        <a href="https://wa.me/628123456789" class="btn-hero btn-hero-outline">
-                            <i class="bi bi-telephone"></i>
-                            Hubungi Kami
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <!-- Slide 3: Ramadhan Special -->
-        <div class="hero-slide" data-slide="3">
-            <img src="{{ asset('images/hero/promo.jpg') }}" alt="Masjid Nabawi">
-            <div class="hero-overlay"></div>
-            <div class="container">
-                <div class="hero-content">
-                    <div class="hero-badge">
-                        <i class="bi bi-moon-stars-fill"></i>
-                        <span>Penawaran Spesial Ramadhan</span>
-                    </div>
-                    <h1 class="hero-title">
-                        Umrah <span class="hero-title-highlight">Ramadhan</span> 1446H
-                    </h1>
-                    <div class="hero-divider"></div>
-                    <p class="hero-subtitle">
-                        Raih pahala berlipat di bulan suci Ramadhan. Termasuk sahur & iftar premium, tarawih di Masjidil Haram, dan hotel walking distance.
-                    </p>
-                    <div class="hero-cta">
-                        <a href="{{ route('package.detail', 5) }}" class="btn-hero btn-hero-primary">
-                            <i class="bi bi-gift"></i>
-                            Lihat Paket Ramadhan
-                        </a>
-                        <a href="{{ route('register') }}" class="btn-hero btn-hero-outline">
-                            <i class="bi bi-person-plus"></i>
-                            Daftar Sekarang
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <!-- Slide 4: VIP Premium -->
-        <div class="hero-slide" data-slide="4">
-            <img src="{{ asset('images/hero/kabah-view.jpg') }}" alt="Kabah View">
-            <div class="hero-overlay"></div>
-            <div class="container">
-                <div class="hero-content">
-                    <div class="hero-badge">
-                        <i class="bi bi-gem"></i>
-                        <span>Layanan Premium Eksklusif</span>
-                    </div>
-                    <h1 class="hero-title">
-                        Paket <span class="hero-title-highlight">VIP Premium</span>
-                    </h1>
-                    <div class="hero-divider"></div>
-                    <p class="hero-subtitle">
-                        Pengalaman umrah tak terlupakan dengan hotel view Ka'bah, first class ticket, city tour, dan pelayanan mewah untuk kenyamanan maksimal.
-                    </p>
-                    <div class="hero-cta">
-                        <a href="{{ route('package.detail', 2) }}" class="btn-hero btn-hero-primary">
-                            <i class="bi bi-stars"></i>
-                            Explore VIP Package
-                        </a>
-                        <a href="https://wa.me/628123456789" class="btn-hero btn-hero-outline">
-                            <i class="bi bi-chat-dots"></i>
-                            Chat Admin
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <!-- Slide 5: Umrah Plus Turki -->
-        <div class="hero-slide" data-slide="5">
-            <img src="{{ asset('images/hero/turki-istanbul.jpg') }}" alt="Istanbul Turkey">
-            <div class="hero-overlay"></div>
-            <div class="container">
-                <div class="hero-content">
-                    <div class="hero-badge">
-                        <i class="bi bi-globe-asia-australia"></i>
-                        <span>Paket Wisata Religi</span>
-                    </div>
-                    <h1 class="hero-title">
-                        Umrah Plus <span class="hero-title-highlight">Turki</span>
-                    </h1>
-                    <div class="hero-divider"></div>
-                    <p class="hero-subtitle">
-                        Kombinasi sempurna ibadah umrah dan wisata Istanbul. Kunjungi Masjid Biru, Hagia Sophia, dan Grand Bazaar dalam satu perjalanan.
-                    </p>
-                    <div class="hero-cta">
-                        <a href="{{ route('package.detail', 3) }}" class="btn-hero btn-hero-primary">
-                            <i class="bi bi-airplane"></i>
-                            Lihat Itinerary
-                        </a>
-                        <a href="https://wa.me/628123456789" class="btn-hero btn-hero-outline">
-                            <i class="bi bi-question-circle"></i>
-                            Tanya Detail
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <div class="islamic-pattern"></div>
-    
-    <!-- Slider Navigation Buttons - Side Position -->
-    <button class="slider-nav-btn slider-prev" aria-label="Previous Slide">
-        <i class="bi bi-chevron-left"></i>
-    </button>
-    <button class="slider-nav-btn slider-next" aria-label="Next Slide">
-        <i class="bi bi-chevron-right"></i>
-    </button>
-    
-    <!-- Slider Dots - Bottom Center -->
-    <div class="slider-dots">
-        <button class="slider-dot active" data-slide="0" aria-label="Slide 1"></button>
-        <button class="slider-dot" data-slide="1" aria-label="Slide 2"></button>
-        <button class="slider-dot" data-slide="2" aria-label="Slide 3"></button>
-        <button class="slider-dot" data-slide="3" aria-label="Slide 4"></button>
-        <button class="slider-dot" data-slide="4" aria-label="Slide 5"></button>
-    </div>
-</section>
 
-<!-- Quick Filter -->
-<section class="filter-section">
-    <div class="container">
-        <div class="filter-tabs">
-            <button class="filter-tab active">Semua Jadwal</button>
-            <button class="filter-tab">Januari - Maret</button>
-            <button class="filter-tab">April - Juni</button>
-            <button class="filter-tab">Juli - September</button>
-            <button class="filter-tab">Oktober - Desember</button>
+<!-- ==================== HERO VIDEO SECTION ==================== -->
+<section class="hero-video-section">
+    <!-- Background Video -->
+    <video class="hero-video" autoplay muted loop playsinline preload="metadata" poster="{{ asset('images/hero/kaabah-poster.jpg') }}">
+        <source src="{{ asset('videos/kaabah-hero.mp4') }}" type="video/mp4">
+        <source src="{{ asset('videos/kaabah-hero.webm') }}" type="video/webm">
+        Your browser does not support the video tag.
+    </video>
+    
+    <!-- Dark Overlay -->
+    <div class="hero-overlay"></div>
+    
+    <!-- Hero Content -->
+    <div class="hero-content-wrapper">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="bi bi-patch-check-fill"></i>
+                    <span>Terpercaya Sejak 2016</span>
+                </div>
+                
+                <h1 class="hero-title">
+                    Wujudkan Ibadah Umrah & Haji<br>
+                    Bersama <span class="highlight">Keluarga</span>
+                </h1>
+                
+                <p class="hero-subtitle">
+                    Bimbingan lengkap, fasilitas nyaman, harga transparan.<br>
+                    Berangkat dengan tenang, pulang dengan penuh berkah.
+                </p>
+                
+                <div class="hero-cta">
+                    <a href="#paket" class="btn-primary">
+                        <i class="bi bi-calendar-check"></i>
+                        Lihat Paket Umrah
+                    </a>
+                    <a href="https://wa.me/6282184515310" class="btn-outline" target="_blank">
+                        <i class="bi bi-whatsapp"></i>
+                        Konsultasi Gratis
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
 </section>
 
-<!-- Schedule Section -->
-<section class="schedule-section">
+<!-- ==================== STATS SECTION ==================== -->
+<section class="stats-section">
     <div class="container">
-        <div class="section-header">
-            <span class="section-badge">Jadwal Terbaru</span>
-            <h2 class="section-title">Pilihan Jadwal Keberangkatan</h2>
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-number">99%</div>
+                <div class="stat-label">Jamaah Puas</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">20+</div>
+                <div class="stat-label">Tahun Pengalaman</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">3000+</div>
+                <div class="stat-label">Jamaah Dilayani</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">6</div>
+                <div class="stat-label">Kantor Cabang</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== ABOUT SECTION ==================== -->
+<section class="about-section">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="about-content">
+                    <span class="section-badge">Tentang Kami</span>
+                    <h2 class="section-title">Mahira Tour<br>Travel Umrah & Haji Terpercaya</h2>
+                    <p class="section-text">
+                        Mahira Tour adalah perusahaan travel yang fokus pada penyelenggaraan perjalanan Umrah dan Haji. 
+                        Berizin resmi dari Kementerian Agama RI, kami berkomitmen memberikan pelayanan terbaik 
+                        dengan fasilitas premium dan bimbingan spiritual yang mendalam.
+                    </p>
+                    
+                    <ul class="feature-list">
+                        <li><i class="bi bi-check-circle-fill"></i> Izin Resmi Kemenag RI</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Pembimbing Berpengalaman</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Fasilitas Premium</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Harga Kompetitif</li>
+                    </ul>
+                    
+                    <div class="about-buttons">
+                        <a href="{{ route('about') }}" class="btn-primary">Tentang Kami</a>
+                        <a href="#legalitas" class="btn-text">Lihat Legalitas</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="about-image">
+                    <img src="{{ asset('images/hero/jamaah2.jpeg') }}" alt="Kantor Mahira Tour">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== WHY CHOOSE US SECTION ==================== -->
+<section class="why-section">
+    <div class="container">
+        <div class="section-header-center">
+            <span class="section-badge">Mengapa Pilih Kami</span>
+            <h2 class="section-title">Keunggulan Mahira Tour</h2>
             <p class="section-subtitle">
-                Berangkat sesuai jadwal Anda dengan fasilitas lengkap dan pembimbing berpengalaman
+                Komitmen kami adalah memberikan pengalaman ibadah yang berkah dan tak terlupakan
             </p>
         </div>
         
         <div class="row g-4">
-            <!-- Schedule Card 1 -->
             <div class="col-lg-4 col-md-6">
-                <div class="schedule-card">
-                    <div class="schedule-header">
-                        <span class="schedule-badge available">Tersedia</span>
-                        <h3 class="schedule-package-name">Paket Umrah Reguler</h3>
-                        <div class="schedule-duration">
-                            <i class="bi bi-clock"></i> 9 Hari 7 Malam
-                        </div>
+                <div class="why-card">
+                    <div class="why-icon">
+                        <i class="bi bi-star-fill"></i>
                     </div>
-                    <div class="schedule-body">
-                        <div class="schedule-dates">
-                            <div class="schedule-date-item">
-                                <div class="schedule-date-label">Keberangkatan</div>
-                                <div class="schedule-date-value">
-                                    <i class="bi bi-calendar-event"></i>
-                                    15 Mar 2025
-                                </div>
-                            </div>
-                            <div class="schedule-date-item">
-                                <div class="schedule-date-label">Kepulangan</div>
-                                <div class="schedule-date-value">
-                                    <i class="bi bi-calendar-check"></i>
-                                    23 Mar 2025
-                                </div>
-                            </div>
+                    <h3 class="why-title">Sesuai Syariat Islam</h3>
+                    <p class="why-text">
+                        Seluruh program kami mengikuti tuntunan Al-Qur'an dan Sunnah dengan bimbingan ustadz kompeten.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6">
+                <div class="why-card">
+                    <div class="why-icon">
+                        <i class="bi bi-shield-check"></i>
+                    </div>
+                    <h3 class="why-title">Izin Resmi</h3>
+                    <p class="why-text">
+                        Terdaftar dan diawasi langsung oleh Kementerian Agama RI PPIU No : 21062301498960002  
+                    </p>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6">
+                <div class="why-card">
+                    <div class="why-icon">
+                        <i class="bi bi-people-fill"></i>
+                    </div>
+                    <h3 class="why-title">Profesional & Berpengalaman</h3>
+                    <p class="why-text">
+                        Tim pembimbing dan tour leader yang berpengalaman melayani ribuan jamaah sejak 2016.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== PACKAGE SECTION ==================== -->
+<section class="package-section" id="paket">
+    <div class="container">
+        <div class="section-header-center">
+            <span class="section-badge">Paket Istimewa</span>
+            <h2 class="section-title">Penawaran Paket Haji dan Umrah</h2>
+            <p class="section-subtitle">
+                Pilih paket yang sesuai dengan kebutuhan dan kenyamanan spiritual Anda
+            </p>
+        </div>
+        
+        <div class="row g-4">
+            <!-- Package 1: Umrah Reguler -->
+            <div class="col-lg-4 col-md-6">
+                <div class="package-card">
+                    <div class="package-image">
+                        <img src="{{ asset('images/hero/kaabah.jpg') }}" alt="Umrah Reguler">
+                        <div class="package-badge">Tersedia</div>
+                    </div>
+                    <div class="package-body">
+                        <h3 class="package-title">Paket Umrah Reguler</h3>
+                        <div class="package-meta">
+                            <span><i class="bi bi-calendar"></i> 9 Hari 7 Malam</span>
+                            <span><i class="bi bi-geo-alt"></i> Makkah - Madinah</span>
                         </div>
                         
-                        <ul class="schedule-features">
-                            <li><i class="bi bi-check-circle-fill"></i> Hotel Bintang 5 dekat Haram</li>
-                            <li><i class="bi bi-check-circle-fill"></i> Tiket Pesawat PP (Garuda/Saudia)</li>
-                            <li><i class="bi bi-check-circle-fill"></i> Makan 3x Sehari (Buffet)</li>
-                            <li><i class="bi bi-check-circle-fill"></i> Pembimbing Ibadah Berpengalaman</li>
-                            <li><i class="bi bi-check-circle-fill"></i> Visa & Asuransi Perjalanan</li>
+                        <ul class="package-features">
+                            <li><i class="bi bi-check"></i> Hotel Bintang 5</li>
+                            <li><i class="bi bi-check"></i> Tiket Pesawat PP</li>
+                            <li><i class="bi bi-check"></i> Makan 3x Sehari</li>
+                            <li><i class="bi bi-check"></i> Pembimbing Ibadah</li>
                         </ul>
                         
-                        <div class="schedule-footer">
-                            <div class="schedule-price-wrapper">
-                                <span class="schedule-price-label">Mulai dari</span>
-                                <span class="schedule-price">Rp 28jt</span>
+                        <div class="package-footer">
+                            <div class="package-price">
+                                <span class="price-label">Mulai dari</span>
+                                <span class="price-value">Rp 28 Juta</span>
                             </div>
-                            <div class="schedule-seats">
-                                <span class="schedule-seats-label">Sisa Kursi</span>
-                                <span class="schedule-seats-count">27/45</span>
-                            </div>
+                            <a href="{{ route('package.detail', 1) }}" class="btn-package">Lihat Detail</a>
                         </div>
-                        
-                        <a href="{{ route('package.detail', 1) }}" class="btn-schedule">
-                            <i class="bi bi-info-circle"></i>
-                            Lihat Detail & Daftar
-                        </a>
                     </div>
                 </div>
             </div>
             
-            <!-- Schedule Card 2 -->
+            <!-- Package 2: Umrah VIP Premium (Best Seller) -->
             <div class="col-lg-4 col-md-6">
-                <div class="schedule-card">
-                    <div class="schedule-header">
-                        <span class="schedule-badge limited">Hampir Penuh</span>
-                        <h3 class="schedule-package-name">Paket Umrah VIP Premium</h3>
-                        <div class="schedule-duration">
-                            <i class="bi bi-clock"></i> 12 Hari 10 Malam
-                        </div>
+                <div class="package-card featured">
+                    <div class="package-image">
+                        <img src="{{ asset('images/hero/promo.jpg') }}" alt="Umrah VIP">
+                        <div class="package-badge featured">Best Seller</div>
                     </div>
-                    <div class="schedule-body">
-                        <div class="schedule-dates">
-                            <div class="schedule-date-item">
-                                <div class="schedule-date-label">Keberangkatan</div>
-                                <div class="schedule-date-value">
-                                    <i class="bi bi-calendar-event"></i>
-                                    10 Apr 2025
-                                </div>
-                            </div>
-                            <div class="schedule-date-item">
-                                <div class="schedule-date-label">Kepulangan</div>
-                                <div class="schedule-date-value">
-                                    <i class="bi bi-calendar-check"></i>
-                                    21 Apr 2025
-                                </div>
-                            </div>
+                    <div class="package-body">
+                        <h3 class="package-title">Paket Umrah VIP Premium</h3>
+                        <div class="package-meta">
+                            <span><i class="bi bi-calendar"></i> 12 Hari 10 Malam</span>
+                            <span><i class="bi bi-geo-alt"></i> Makkah - Madinah</span>
                         </div>
                         
-                        <ul class="schedule-features">
-                            <li><i class="bi bi-check-circle-fill"></i> Hotel Bintang 5 View Ka'bah</li>
-                            <li><i class="bi bi-check-circle-fill"></i> Tiket First Class (Garuda)</li>
-                            <li><i class="bi bi-check-circle-fill"></i> Makan Premium (Arab & Indo)</li>
-                            <li><i class="bi bi-check-circle-fill"></i> City Tour Madinah & Jeddah</li>
-                            <li><i class="bi bi-check-circle-fill"></i> Koper Premium + Perlengkapan</li>
+                        <ul class="package-features">
+                            <li><i class="bi bi-check"></i> Hotel View Ka'bah</li>
+                            <li><i class="bi bi-check"></i> First Class Ticket</li>
+                            <li><i class="bi bi-check"></i> Makan Premium</li>
+                            <li><i class="bi bi-check"></i> City Tour</li>
                         </ul>
                         
-                        <div class="schedule-footer">
-                            <div class="schedule-price-wrapper">
-                                <span class="schedule-price-label">Mulai dari</span>
-                                <span class="schedule-price">Rp 45jt</span>
+                        <div class="package-footer">
+                            <div class="package-price">
+                                <span class="price-label">Mulai dari</span>
+                                <span class="price-value">Rp 45 Juta</span>
                             </div>
-                            <div class="schedule-seats">
-                                <span class="schedule-seats-label">Sisa Kursi</span>
-                                <span class="schedule-seats-count limited">5/30</span>
-                            </div>
+                            <a href="{{ route('package.detail', 2) }}" class="btn-package">Lihat Detail</a>
                         </div>
-                        
-                        <a href="{{ route('package.detail', 2) }}" class="btn-schedule">
-                            <i class="bi bi-info-circle"></i>
-                            Lihat Detail & Daftar
-                        </a>
                     </div>
                 </div>
             </div>
             
-            <!-- Schedule Card 3 -->
+            <!-- Package 3: Umrah Ramadhan -->
             <div class="col-lg-4 col-md-6">
-                <div class="schedule-card">
-                    <div class="schedule-header">
-                        <span class="schedule-badge available">Tersedia</span>
-                        <h3 class="schedule-package-name">Paket Umrah Plus Turki</h3>
-                        <div class="schedule-duration">
-                            <i class="bi bi-clock"></i> 15 Hari 13 Malam
-                        </div>
+                <div class="package-card">
+                    <div class="package-image">
+                        <img src="{{ asset('images/hero/hero-5.jpg') }}" alt="Umrah Ramadhan">
+                        <div class="package-badge">Tersedia</div>
                     </div>
-                    <div class="schedule-body">
-                        <div class="schedule-dates">
-                            <div class="schedule-date-item">
-                                <div class="schedule-date-label">Keberangkatan</div>
-                                <div class="schedule-date-value">
-                                    <i class="bi bi-calendar-event"></i>
-                                    05 Mei 2025
-                                </div>
-                            </div>
-                            <div class="schedule-date-item">
-                                <div class="schedule-date-label">Kepulangan</div>
-                                <div class="schedule-date-value">
-                                    <i class="bi bi-calendar-check"></i>
-                                    19 Mei 2025
-                                </div>
-                            </div>
+                    <div class="package-body">
+                        <h3 class="package-title">Paket Umrah Ramadhan</h3>
+                        <div class="package-meta">
+                            <span><i class="bi bi-calendar"></i> 12 Hari 10 Malam</span>
+                            <span><i class="bi bi-geo-alt"></i> Makkah - Madinah</span>
                         </div>
                         
-                        <ul class="schedule-features">
-                            <li><i class="bi bi-check-circle-fill"></i> Umrah + Wisata Istanbul</li>
-                            <li><i class="bi bi-check-circle-fill"></i> Hotel Bintang 5 (Saudi & Turki)</li>
-                            <li><i class="bi bi-check-circle-fill"></i> Visit Masjid Biru & Hagia Sophia</li>
-                            <li><i class="bi bi-check-circle-fill"></i> Shopping Grand Bazaar</li>
-                            <li><i class="bi bi-check-circle-fill"></i> Tour Leader Berpengalaman</li>
+                        <ul class="package-features">
+                            <li><i class="bi bi-check"></i> Special Ramadhan</li>
+                            <li><i class="bi bi-check"></i> Hotel Bintang 5</li>
+                            <li><i class="bi bi-check"></i> Sahur & Iftar Premium</li>
+                            <li><i class="bi bi-check"></i> Tarawih di Haram</li>
                         </ul>
                         
-                        <div class="schedule-footer">
-                            <div class="schedule-price-wrapper">
-                                <span class="schedule-price-label">Mulai dari</span>
-                                <span class="schedule-price">Rp 38jt</span>
+                        <div class="package-footer">
+                            <div class="package-price">
+                                <span class="price-label">Mulai dari</span>
+                                <span class="price-value">Rp 42 Juta</span>
                             </div>
-                            <div class="schedule-seats">
-                                <span class="schedule-seats-label">Sisa Kursi</span>
-                                <span class="schedule-seats-count">35/45</span>
-                            </div>
+                            <a href="{{ route('package.detail', 3) }}" class="btn-package">Lihat Detail</a>
                         </div>
-                        
-                        <a href="{{ route('package.detail', 3) }}" class="btn-schedule">
-                            <i class="bi bi-info-circle"></i>
-                            Lihat Detail & Daftar
-                        </a>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Schedule Card 4 -->
-            <div class="col-lg-4 col-md-6">
-                <div class="schedule-card">
-                    <div class="schedule-header">
-                        <span class="schedule-badge available">Tersedia</span>
-                        <h3 class="schedule-package-name">Paket Umrah Ekonomis</h3>
-                        <div class="schedule-duration">
-                            <i class="bi bi-clock"></i> 9 Hari 7 Malam
-                        </div>
-                    </div>
-                    <div class="schedule-body">
-                        <div class="schedule-dates">
-                            <div class="schedule-date-item">
-                                <div class="schedule-date-label">Keberangkatan</div>
-                                <div class="schedule-date-value">
-                                    <i class="bi bi-calendar-event"></i>
-                                    20 Jun 2025
-                                </div>
-                            </div>
-                            <div class="schedule-date-item">
-                                <div class="schedule-date-label">Kepulangan</div>
-                                <div class="schedule-date-value">
-                                    <i class="bi bi-calendar-check"></i>
-                                    28 Jun 2025
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <ul class="schedule-features">
-                            <li><i class="bi bi-check-circle-fill"></i> Hotel Bintang 3-4 Ajyad/Aziziyah</li>
-                            <li><i class="bi bi-check-circle-fill"></i> Tiket Pesawat PP (Lion/Citilink)</li>
-                            <li><i class="bi bi-check-circle-fill"></i> Makan 3x Sehari</li>
-                            <li><i class="bi bi-check-circle-fill"></i> Pembimbing Ibadah</li>
-                            <li><i class="bi bi-check-circle-fill"></i> Visa & Handling</li>
-                        </ul>
-                        
-                        <div class="schedule-footer">
-                            <div class="schedule-price-wrapper">
-                                <span class="schedule-price-label">Mulai dari</span>
-                                <span class="schedule-price">Rp 22jt</span>
-                            </div>
-                            <div class="schedule-seats">
-                                <span class="schedule-seats-label">Sisa Kursi</span>
-                                <span class="schedule-seats-count">40/45</span>
-                            </div>
-                        </div>
-                        
-                        <a href="{{ route('package.detail', 4) }}" class="btn-schedule">
-                            <i class="bi bi-info-circle"></i>
-                            Lihat Detail & Daftar
-                        </a>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Schedule Card 5 -->
-            <div class="col-lg-4 col-md-6">
-                <div class="schedule-card">
-                    <div class="schedule-header">
-                        <span class="schedule-badge available">Tersedia</span>
-                        <h3 class="schedule-package-name">Paket Umrah Ramadhan</h3>
-                        <div class="schedule-duration">
-                            <i class="bi bi-clock"></i> 12 Hari 10 Malam
-                        </div>
-                    </div>
-                    <div class="schedule-body">
-                        <div class="schedule-dates">
-                            <div class="schedule-date-item">
-                                <div class="schedule-date-label">Keberangkatan</div>
-                                <div class="schedule-date-value">
-                                    <i class="bi bi-calendar-event"></i>
-                                    01 Mar 2025
-                                </div>
-                            </div>
-                            <div class="schedule-date-item">
-                                <div class="schedule-date-label">Kepulangan</div>
-                                <div class="schedule-date-value">
-                                    <i class="bi bi-calendar-check"></i>
-                                    12 Mar 2025
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <ul class="schedule-features">
-                            <li><i class="bi bi-check-circle-fill"></i> Special Ramadhan Package</li>
-                            <li><i class="bi bi-check-circle-fill"></i> Hotel Bintang 5 Walking Distance</li>
-                            <li><i class="bi bi-check-circle-fill"></i> Sahur & Iftar Premium</li>
-                            <li><i class="bi bi-check-circle-fill"></i> Tarawih di Masjidil Haram</li>
-                            <li><i class="bi bi-check-circle-fill"></i> Paket Berkah Ramadhan</li>
-                        </ul>
-                        
-                        <div class="schedule-footer">
-                            <div class="schedule-price-wrapper">
-                                <span class="schedule-price-label">Mulai dari</span>
-                                <span class="schedule-price">Rp 42jt</span>
-                            </div>
-                            <div class="schedule-seats">
-                                <span class="schedule-seats-label">Sisa Kursi</span>
-                                <span class="schedule-seats-count">18/40</span>
-                            </div>
-                        </div>
-                        
-                        <a href="{{ route('package.detail', 5) }}" class="btn-schedule">
-                            <i class="bi bi-info-circle"></i>
-                            Lihat Detail & Daftar
-                        </a>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Schedule Card 6 -->
-            <div class="col-lg-4 col-md-6">
-                <div class="schedule-card">
-                    <div class="schedule-header">
-                        <span class="schedule-badge limited">Hampir Penuh</span>
-                        <h3 class="schedule-package-name">Paket Haji Furoda</h3>
-                        <div class="schedule-duration">
-                            <i class="bi bi-clock"></i> 25 Hari 23 Malam
-                        </div>
-                    </div>
-                    <div class="schedule-body">
-                        <div class="schedule-dates">
-                            <div class="schedule-date-item">
-                                <div class="schedule-date-label">Keberangkatan</div>
-                                <div class="schedule-date-value">
-                                    <i class="bi bi-calendar-event"></i>
-                                    10 Jun 2025
-                                </div>
-                            </div>
-                            <div class="schedule-date-item">
-                                <div class="schedule-date-label">Kepulangan</div>
-                                <div class="schedule-date-value">
-                                    <i class="bi bi-calendar-check"></i>
-                                    04 Jul 2025
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <ul class="schedule-features">
-                            <li><i class="bi bi-check-circle-fill"></i> Program Haji Khusus (ONH Plus)</li>
-                            <li><i class="bi bi-check-circle-fill"></i> Hotel Bintang 5 Makkah & Madinah</li>
-                            <li><i class="bi bi-check-circle-fill"></i> Full AC Bus & Catering</li>
-                            <li><i class="bi bi-check-circle-fill"></i> Tenda Arafah Ber-AC</li>
-                            <li><i class="bi bi-check-circle-fill"></i> Handling Penuh 25 Hari</li>
-                        </ul>
-                        
-                        <div class="schedule-footer">
-                            <div class="schedule-price-wrapper">
-                                <span class="schedule-price-label">Mulai dari</span>
-                                <span class="schedule-price">Rp 85jt</span>
-                            </div>
-                            <div class="schedule-seats">
-                                <span class="schedule-seats-label">Sisa Kursi</span>
-                                <span class="schedule-seats-count limited">8/35</span>
-                            </div>
-                        </div>
-                        
-                        <a href="{{ route('package.detail', 6) }}" class="btn-schedule">
-                            <i class="bi bi-info-circle"></i>
-                            Lihat Detail & Daftar
-                        </a>
                     </div>
                 </div>
             </div>
         </div>
         
         <div class="text-center mt-5">
-            <a href="{{ route('schedule') }}" class="btn-cta btn-cta-primary">
-                <i class="bi bi-calendar3"></i>
-                Lihat Semua Jadwal
+            <a href="{{ route('schedule') }}" class="btn-primary-lg">
+                Lihat Semua Paket
+                <i class="bi bi-arrow-right"></i>
             </a>
         </div>
     </div>
 </section>
 
-<!-- Stats Section -->
-<section class="stats-section">
+<!-- ==================== TESTIMONIAL SECTION ==================== -->
+<section class="testimonial-section">
     <div class="container">
-        <div class="stats-container">
-            <div class="stat-item">
-                <div class="stat-number">9+</div>
-                <div class="stat-label">Tahun Pengalaman</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-number">15K+</div>
-                <div class="stat-label">Jamaah Dilayani</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-number">6</div>
-                <div class="stat-label">Cabang di Indonesia</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-number">100%</div>
-                <div class="stat-label">Kepuasan Jamaah</div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Features Section -->
-<section class="features-section">
-    <div class="container">
-        <div class="section-header">
-            <span class="section-badge">Mengapa Pilih Kami</span>
-            <h2 class="section-title">Keunggulan Mahira Tour</h2>
+        <div class="section-header-center">
+            <span class="section-badge">Testimoni</span>
+            <h2 class="section-title">Video Testimoni Jamaah</h2>
             <p class="section-subtitle">
-                Kami berkomitmen memberikan pelayanan terbaik untuk perjalanan ibadah Anda
+                Dengarkan pengalaman jamaah yang telah merasakan ibadah bersama Mahira Tour
             </p>
         </div>
         
         <div class="row g-4">
-            <div class="col-lg-3 col-md-6">
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="bi bi-shield-check"></i>
+            <div class="col-lg-4 col-md-6">
+                <div class="testimonial-card">
+                    <div class="testimonial-video">
+                        <video controls poster="{{ asset('images/testimonial-1.jpg') }}">
+                            <source src="{{ asset('videos/testimonial-1.mp4') }}" type="video/mp4">
+                        </video>
                     </div>
-                    <h3 class="feature-title">Izin Resmi</h3>
-                    <p class="feature-description">
-                        Terdaftar dan berizin resmi dari Kementerian Agama RI
-                    </p>
+                    <div class="testimonial-content">
+                        <h4 class="testimonial-title">Pengalaman Umrah Luar Biasa</h4>
+                        <p class="testimonial-name">Ibu Siti - Jakarta</p>
+                    </div>
                 </div>
             </div>
             
-            <div class="col-lg-3 col-md-6">
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="bi bi-building"></i>
+            <div class="col-lg-4 col-md-6">
+                <div class="testimonial-card">
+                    <div class="testimonial-video">
+                        <video controls poster="{{ asset('images/testimonial-2.jpg') }}">
+                            <source src="{{ asset('videos/testimonial-2.mp4') }}" type="video/mp4">
+                        </video>
                     </div>
-                    <h3 class="feature-title">Hotel Terbaik</h3>
-                    <p class="feature-description">
-                        Hotel bintang 5 dengan jarak dekat dari Masjidil Haram
-                    </p>
+                    <div class="testimonial-content">
+                        <h4 class="testimonial-title">Pelayanan Sangat Memuaskan</h4>
+                        <p class="testimonial-name">Bapak Ahmad - Bandung</p>
+                    </div>
                 </div>
             </div>
             
-            <div class="col-lg-3 col-md-6">
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="bi bi-people"></i>
+            <div class="col-lg-4 col-md-6">
+                <div class="testimonial-card">
+                    <div class="testimonial-video">
+                        <video controls poster="{{ asset('images/testimonial-3.jpg') }}">
+                            <source src="{{ asset('videos/testimonial-3.mp4') }}" type="video/mp4">
+                        </video>
                     </div>
-                    <h3 class="feature-title">Tim Profesional</h3>
-                    <p class="feature-description">
-                        Pembimbing ibadah dan tour leader berpengalaman
-                    </p>
+                    <div class="testimonial-content">
+                        <h4 class="testimonial-title">Terima Kasih Mahira Tour</h4>
+                        <p class="testimonial-name">Ibu Fatimah - Surabaya</p>
+                    </div>
                 </div>
             </div>
+        </div>
+        
+        <div class="text-center mt-4">
+            <a href="{{ route('testimonials') }}" class="btn-outline-primary">
+                Lihat Semua Testimoni
+                <i class="bi bi-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== GALLERY SECTION ==================== -->
+<section class="gallery-section">
+    <div class="container">
+        <div class="section-header-center">
+            <span class="section-badge">Galeri</span>
+            <h2 class="section-title">Dokumentasi Perjalanan Ibadah</h2>
+        </div>
+        
+        <div class="gallery-grid">
+            @php
+            $galleries = [
+                ['src' => 'gallery/gallery-1.jpeg', 'alt' => 'Jamaah di Masjid Nabawi'],
+                ['src' => 'gallery/gallery-2.jpeg', 'alt' => 'Jamaah di Jabal Rahmah'],
+                ['src' => 'gallery/gallery-3.jpeg', 'alt' => 'Jamaah di Masjidil Haram'],
+                ['src' => 'gallery/gallery-4.jpeg', 'alt' => 'Jamaah di Makkah'],
+                ['src' => 'gallery/gallery-5.jpeg', 'alt' => 'Jamaah di Madinah'],
+                ['src' => 'gallery/gallery-6.jpeg', 'alt' => 'Jamaah Mahira Tour']
+            ];
+            @endphp
             
-            <div class="col-lg-3 col-md-6">
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="bi bi-wallet2"></i>
-                    </div>
-                    <h3 class="feature-title">Harga Terjangkau</h3>
-                    <p class="feature-description">
-                        Paket umrah dengan harga kompetitif dan fasilitas lengkap
-                    </p>
+            @foreach($galleries as $index => $item)
+            <div class="gallery-item" onclick="openGalleryModal({{ $index }})">
+                <img src="{{ asset('images/' . $item['src']) }}" alt="{{ $item['alt'] }}">
+                <div class="gallery-overlay">
+                    <i class="bi bi-zoom-in"></i>
                 </div>
+            </div>
+            @endforeach
+        </div>
+        
+        <div class="text-center mt-4">
+            <a href="{{ route('gallery') }}" class="btn-outline-primary">
+                Lihat Galeri Lengkap
+                <i class="bi bi-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Gallery Modal -->
+<div id="galleryModal" class="gallery-modal">
+    <span class="gallery-close" onclick="closeGalleryModal()">&times;</span>
+    <div class="gallery-counter" id="galleryCounter"></div>
+    
+    <button class="gallery-nav prev" onclick="changeGallery(-1)">
+        <i class="bi bi-chevron-left"></i>
+    </button>
+    
+    <div class="gallery-modal-content">
+        <img id="galleryModalImg" src="" alt="">
+    </div>
+    
+    <button class="gallery-nav next" onclick="changeGallery(1)">
+        <i class="bi bi-chevron-right"></i>
+    </button>
+</div>
+
+<!-- ==================== LOCATION SECTION ==================== -->
+<section class="location-section">
+    <div class="container">
+        <div class="section-header-center">
+            <span class="section-badge">Lokasi Kami</span>
+            <h2 class="section-title">Kunjungi Kantor Pusat Mahira Tour</h2>
+            <p class="section-subtitle">
+                Jl. Raya Makkah No. 123, Jakarta Selatan 12345
+            </p>
+        </div>
+        
+        <div class="location-wrapper">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7974.528410081892!2d101.3896565!3d-2.050239!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e2da1004b62a7c9%3A0xdebd36e55d2e3189!2sTravel%20Umroh%20Mahira%20Tour!5e0!3m2!1sid!2sid!4v1766545347293!5m2!1sid!2sid" 
+                height="450" 
+                style="border:0; border-radius: 16px;" 
+                allowfullscreen="" 
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+        
+        <div class="text-center mt-4">
+            <a href="https://www.google.com/maps/place/Travel+Umroh+Mahira+Tour/@-2.050239,101.3896565,15z" target="_blank" class="btn-primary-lg">
+                <i class="bi bi-map"></i>
+                Buka di Google Maps
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== PARTNERS SECTION ==================== -->
+<section class="partners-section">
+    <div class="container">
+        <div class="section-header-center">
+            <span class="section-badge">Mitra Kami</span>
+            <h2 class="section-title">Maskapai yang Digunakan</h2>
+        </div>
+        
+        <div class="partners-grid">
+            <div class="partner-item">
+                <img src="{{ asset('images/partners/garuda.png') }}" alt="Garuda Indonesia">
+            </div>
+            <div class="partner-item">
+                <img src="{{ asset('images/partners/saudia.png') }}" alt="Saudia Airlines">
+            </div>
+            <div class="partner-item">
+                <img src="{{ asset('images/partners/batik.png') }}" alt="Batik Air">
+            </div>
+            <div class="partner-item">
+                <img src="{{ asset('images/partners/lion.png') }}" alt="Lion Air">
             </div>
         </div>
     </div>
 </section>
 
-<!-- CTA Section -->
+<!-- ==================== CTA SECTION ==================== -->
 <section class="cta-section">
     <div class="container">
         <div class="cta-content">
             <h2 class="cta-title">Siap Berangkat ke Tanah Suci?</h2>
             <p class="cta-subtitle">
-                Hubungi kami sekarang untuk konsultasi gratis dan dapatkan penawaran terbaik.<br>
-                Tim profesional kami siap membantu Anda 24/7.
+                Hubungi kami sekarang untuk konsultasi gratis dan dapatkan penawaran terbaik
             </p>
             <div class="cta-buttons">
-                <a href="https://wa.me/628123456789" class="btn-cta btn-cta-primary">
+                <a href="https://wa.me/628123456789" class="btn-cta-primary" target="_blank">
                     <i class="bi bi-whatsapp"></i>
                     Konsultasi via WhatsApp
                 </a>
-                <a href="{{ route('register') }}" class="btn-cta btn-cta-secondary">
+                <a href="{{ route('register') }}" class="btn-cta-secondary">
                     <i class="bi bi-person-plus"></i>
                     Daftar Sekarang
                 </a>
@@ -667,6 +482,45 @@
         </div>
     </div>
 </section>
+
+<!-- ==================== FLOATING INQUIRY BUTTON ==================== 
+ <div class="floating-inquiry">
+    <span class="inquiry-label">Ada Pertanyaan?</span>
+    <button class="inquiry-button" data-bs-toggle="modal" data-bs-target="#inquiryModal">
+        <i class="bi bi-chat-dots-fill"></i>
+    </button>
+</div>
+
+ ==================== INQUIRY MODAL ==================== 
+<div class="modal fade" id="inquiryModal" tabindex="-1" aria-labelledby="inquiryModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="inquiryModalLabel">Konsultasi Paket Umrah</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="inquiryForm">
+                    <input type="text" name="name" placeholder="Nama Lengkap *" required>
+                    <input type="email" name="email" placeholder="Email *" required>
+                    <input type="tel" name="phone" placeholder="Nomor WhatsApp *" required>
+                    <select name="package" required>
+                        <option value="">Pilih Paket *</option>
+                        <option value="Umrah Reguler">Umrah Reguler</option>
+                        <option value="Umrah VIP Premium">Umrah VIP Premium</option>
+                        <option value="Umrah Ramadhan">Umrah Ramadhan</option>
+                        <option value="Lainnya">Lainnya</option>
+                    </select>
+                    <textarea name="message" placeholder="Pertanyaan Anda (Opsional)" rows="3"></textarea>
+                    <button type="submit">
+                        <i class="bi bi-send-fill"></i> Kirim Pertanyaan
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div> -->
+
 @endsection
 
 @push('scripts')
